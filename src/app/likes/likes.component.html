@@ -1,0 +1,9 @@
+
+<span>
+    <i class="fas fa-heart"  [style.color]="isLiked ? 'deeppink' : 'gray'" (click)= onLikeClick()></i>
+</span>
+<span>
+    <i class="fab"  [class.fa-facebook-square] = "!isLiked" [class.fa-facebook] = "isLiked"[class.highlighted]="isLiked"></i>
+</span>
+
+{{counts}}

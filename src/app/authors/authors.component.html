@@ -1,0 +1,17 @@
+<h1>{{ authors.length + title}}</h1>
+<ul>
+    <li *ngFor='let author of authors'>{{ author}}</li>
+</ul>
+<i class="fab fa-angular"></i>
+<br>
+<i (click)= onClick() class ="fa-star" [class.fas]="isFavourite" [class.far]="!isFavourite"></i>
+<br>
+<i (click)=onClickArrows() class="fas" [class.fa-angle-double-left]="isLeft" [class.fa-angle-double-right]="!isLeft"></i>
+<br>
+<i class="fas fa-angle-double-left"></i>
+<br>
+<input [(ngModel)]="name"  type="text"/>
+<br>
+{{name | titleCase:true}}
+
+<app-likes [likesCount]='counts' [isLiked]='isLiked'></app-likes>
