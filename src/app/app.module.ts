@@ -11,6 +11,10 @@ import { CoursesComponent } from './courses/courses.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { FollowersComponent } from './followers/followers.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BlogsComponent } from './blogs/blogs.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ArchiveComponent } from './archive/archive.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +25,17 @@ import { HttpClientModule } from '@angular/common/http';
     ZippyComponent,
     CoursesComponent,
     ChangePasswordComponent,
-    FollowersComponent
+    FollowersComponent,
+    BlogsComponent,
+    NotfoundComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
